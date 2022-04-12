@@ -11,14 +11,37 @@
   <style> 
   body {
     font-family: 'Courier New', monospace;
+    background-color: #BFE9F7;
   }
+    * {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
   </style>
 </head>
 
 <body>
-   <img src= "https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1622620972/mashpeek12maus/lcszrmodmsspgyfxqdsw/MashpeePublicSchools.png" width="100" height="100">
-  <h1 style= "text-align: center; monospace; color: blue;"> Mashpee Computer Science </h1>
-  <h2 style= "text-align: center; color: blue;"> #We Are Mashpee</h2>
+
+<div>
+<div style="float: left">
+<img src="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_2/v1622620972/mashpeek12maus/lcszrmodmsspgyfxqdsw/MashpeePublicSchools.png" width="100" height= "100"/>
+</div>
+<div style="display:inline-block;">
+<h2 style= "color: blue;">Mashpee Computer Science</h2>
+  <h3 style= "color: blue;"> #We Are Mashpee</h3>
+</div>
+</div>
+  <br>
   <p> Computer Science I introduces students to the fundamental ideas of computer science. We will apply computational thinking and technology across multiple disciplines to solve a variety of problems. Throughout the course, we’ll touch on ideas of creativity, abstraction, algorithms, data, and computer programming.</p>
 
 <p> Through the school year, this is what is expected to be covered each quarter: </p>
@@ -35,11 +58,40 @@
   </ul>
 
 <h2 style="color: blue;" >Quarter Two</h2> 
+<p> Students are to choose a programming language and will learn how to: </p>
+  <ul> 
+    <li> Prompt for and process user input </li>
+    <li>Create and operate on variables</li> 
+    <li>Control flow with conditionals</li> 
+    <li>Utilize pseudo-random number generation</li> 
+<li>Write functions that take arguments and return output</li> 
+<li>Iteratively operate using loops</li> 
+<li>Create and manipulate arrays </li> 
+<li>Implement and analyze sorting algorithms </li>
+<li>Create and utilize objects</li>
+  </ul>
 
+  <p> Students are able to choose from three programming languages: </p>
 
+  <div class="row">
+    <br>
+  <div class="column">
+    <img src="http://code-institute-org.github.io/Full-Stack-Web-Developer-Stream-0/assets/javascript.png" alt="Javascript" height=100>
+  </div>
+  <div class="column">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="C++" height =100 style= "width:50%">
+  </div>
+  <div class="column">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png" alt="Python" height= 100 style="width:50%">
+  </div>
+</div>
+  
 <h2 style="color: blue;" >Quarter Three</h2>
 
 <h2 style="color: blue;" >Quarter Four</h2>
 </body>
 
+
+
+<p> <a href= "About Me.html"> Click me </a> </p>
 </html>
