@@ -1,7 +1,7 @@
-
 body {
     font-family: 'Courier New', monospace;
-    background-color: #BFE9F7;
+    background-color: white;
+    background-image: url('whaler.png');
   }
     * {
   box-sizing: border-box;
@@ -32,34 +32,4 @@ a:hover {
   color: yellow;
   background-color: transparent;
   text-decoration: underline;
-}
-a:active {
-  color: white;
-  background-color: transparent;
-  text-decoration: underline;
-} 
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th {
-  color: blue; 
-  border: 1px solid #0000FF;
-  text-align: center;
-  padding: 8px;
-}
-
-td {
-  border: 1px solid #0000FF;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #87CEEB;
-}
-} 
-
 }
