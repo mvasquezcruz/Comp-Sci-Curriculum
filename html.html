@@ -1,10 +1,11 @@
 <html> 
 <head> 
- <meta charset="utf-8">
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
-  <link href="style.css" rel="stylesheet" 
-  type="text/css"/> 
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="alternate.css" rel="alternate stylesheet" type="text/css" title="alternate">
+<script src="style.js" type="text/javascript"></script>
 </head>
 
 <body> 
@@ -89,7 +90,7 @@
   <tr> 
     <td> < div > </td>
     <td>Element defines a division or section in the HTML</td>
-  </tr>
+  </tr> 
 </table>
 
 <h2>HTML Attributes</h2>
@@ -102,17 +103,17 @@ As you know, the < a > starting tag defines a hyperlink, the href attribute spec
 <h3 style="text-align:center"> < a href = "URL"> Link < / a > </h3> 
  <h3 style="text-align:center"> <a href="https://jedediyah.com/about.html">Jedediyah's Web Page </a> </h3>
     
-<h3>src, height, & width Attribute</h3> 
+<h3>src, align, height, & width Attribute</h3> 
   
-<p> The element is used to embed an image to the HTML, the src attribute specifies where the image displayed is from. When displaying images from the internet, you can use the URL (Image Adress) of the image. For example: </p>
+<p> The < img > element is used to embed an image to the HTML, the src attribute specifies where the image displayed is from. When displaying images from the internet, you can use the URL (Image Adress) of the image. For example: </p>
   
 <h3 style="text-align:center"> < img src = "URL" > </h3> 
   
 <img class= "center" src="https://s3.amazonaws.com/paemst-v2-nominee-photos/2068219/2068219_profile.jpg" height=200>
 
-<p> The image tag can also contain the height and width attributes, which specify the height and width of the image. For example.</p>
+<p> The image tag can also contain the align, height, and width attributes.  Align specifies where in the HTML will the image be dispalyed on the screen (left, center, right) and height and width specify the height and width of the image. For example.</p>
 
-<h3 style="text-align:center"> < img src = "URL" width= "#" height= "#"> </h3> 
+<h3 style="text-align:center"> < img src = "URL" width= "#" height= "#" align= "left/center/right"> </h3> 
   
 <h3>style Attribute</h3> 
 
@@ -147,9 +148,13 @@ As you know, the < a > starting tag defines a hyperlink, the href attribute spec
   </tr> 
  <tr>
     <td>text-align</td>
-    <td>Prints the working directory (the folder you are currently in)</td>
+    <td>Defines where in the HTML will the text be displayed on the screen.</td>
   </tr> 
-</table>
+</table> 
+
+<p> You can use mutliple CSS properties to style an element just separate properties using a semicolon (;). For example: </p>
+
+ <h3 style="text-align:center; background-color: #87CEEB;color:#FFFF00; font-family: Arial Rounded MT Bold; text-align: center "> < h3 style = "background-color: #87CEEB ; color: #FFFF00; font-family: Arial Rounded MT Bold; text-align: center " > < /h3 > </h3>  
 
 <h2>HEX Colors</h2>
     
@@ -212,11 +217,106 @@ As you know, the < a > starting tag defines a hyperlink, the href attribute spec
 </table> 
 
 <h2>HTML Tables</h2>
+<p> One way to organize data on an HTML page can be with a table. HTML tables consists of table cells inside rows and columns. Making tables on HTML is from top to bottom. The data you insert in each table row working from left to right.</p> 
+
+<p> Making a table you will begin with the < table > tag and inside of that tag you will begin making table rows < tr >. In the first < tr > you'd begin with the headers of the columns < th >. Inside the other table rows tags do you write your data for each column. < td >. For example: </p> 
+
+<div style= "background-color: #87CEEB"> 
+<p> < table > </p>
+<p> < tr > </p>
+<p> < th > Land Animal < /th > </p>
+<p> < th > Sea Animal < /th > </p>
+<p> < /tr > </p> 
+<p> < tr > </p>
+<p> < td > Lion < /td > </p>
+<p> < td > Whale < /td > </p>
+<p> < /tr > </p> 
+<p> < tr > </p>
+<p> < td > Horse < /td > </p>
+<p> < td > Dolphin < /td > </p>
+<p> < /tr > </p> 
+<p> < tr > </p>
+<p> < td > Dog < /td > </p>
+<p> < td > Fish < /td > </p>
+<p> < /tr > </p> 
+<p> < /table > </p>
+</div>
+
+<p> This table would look something like this: </p>
+
+<table> 
+ <tr>
+    <th>Land Animal</th>
+    <th>Sea Animal</th>
+  </tr>
+  <tr>
+    <td>Lion</td>
+    <td>Whale</td>
+  </tr>
+  <tr>
+    <td>Horse</td>
+    <td>Dolphin</td>
+  </tr> 
+  <tr>
+    <td>Dog</td>
+    <td>Fish</td>
+  </tr> 
+</table>
 
 <h2>HTML Lists</h2>
+  
+<p>Another way to organize data on HTML is with lists. There are ordered/numbered lists < ol > and underored/bulleted lists < ul >. </p>
+
+<p> To make either type of list, start with the tag and insert the list item with the < li > tag. For example: </p> 
+
+<div style= "background-color: #87CEEB"> 
+<h3>Ordered List</h3>
+<p> < ol > </p>
+<p> < li > Coffee < /li > </p>
+<p> < li > Tea < /li > </p>
+<p> < li > Milk < /li > </p>
+<p> < /ol > </p>
+<br> 
+<h3>Unordered List</h3>
+<p> < ul > </p>
+<p> < li > Coffee < /li > </p>
+<p> < li > Tea < /li > </p>
+<p> < li > Milk < /li > </p>
+<p> < /ul > </p>
+</div>
+
+<p> Those lists would look like this: </p>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+  
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
 
 <h2>HTML Formatting</h2>
+  
+<p> All HTML pages must start with the < !DOCTYPE html > declaration, followed by the < html > tag. Inside the html tag you can begin with a <head > and then a < body >. This should be the layout you start ALL your HTML pages with: </p>
 
+<div style= "background-color: #87CEEB"> 
+<p> < !DOCTYPE html > </p>
+<p> < html > </p>
+<br>
+<p> < head > </p> 
+<p> (here you can add links, styles, title, meta)</p>
+<p> < /head > </p>
+<br> 
+<p> < body > </p>
+<p> (here you can add paragraphs, headers, images, links, tables, lists, etc.)</p>
+<p> < /body > </p> 
+  <br>
+<p> < /html > </p>
+</div>
 
 <div style= "background-color: skyblue"> 
 <p style= "text-align: center; color: blue">Resources</p>
