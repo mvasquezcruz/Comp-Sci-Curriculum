@@ -27,8 +27,197 @@
 </div>
 </div>
 
-
+<h2>HTML</h2>
   
+<p>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating webpages. HTML consists of a series of elements which tell the browser how to display the webpage content.</p>
+
+<h2>HTML Element</h2>
+
+  <p> An HTML element is defined by a start tag, content in between and an end tag. The element is everything from the start to end tag. For example: </p>
+
+<h3 style="text-align:center""> < h1 > Header < /h1 > </h3>
+
+  <p> The start tag will always be the defined element in <> and the ending tag the same but with a / , < / >. </p>
+
+    <p> This is a list of HTML elements you will use frequently when writing up an HTML page: </p>
+
+    <table> 
+  <tr>
+    <th>HTML Element</th>
+    <th>What It Means</th>
+  </tr>
+  <tr>
+    <td> < !DOCTYPE html > </td>
+    <td>Defines that the page is an HTML5 document</td>
+  </tr>
+  <tr>
+    <td> < html > </td>
+    <td>Element is the root element of an HTML page</td>
+  </tr>
+  <tr>
+    <td> < head > </td>
+    <td> Element which contains meta (data about data) information (title, CSS, scripts, styles, ect.) about the HTML page</td>
+  </tr>
+  <tr>
+    <td> < title > </td>
+    <td>Element specifies the title for the HTML page, which will be name for the HTML shown in the browser bar or in the page's tab. Placed insie head element </td>
+  </tr>
+  <tr>
+    <td> < body > </td>
+    <td>Element defined the pages body and it contains all visible content of the page such as heading, paragraphs, images, links, tables, lists, etc. </td>
+  </tr>
+  <tr>
+    <td> < h(1-6) > </td>
+    <td>Element defines headings. h1 being the largest heading and h6 being the smallest</td>
+  </tr>
+  <tr>
+    <td> < p > </td>
+    <td>Element defines a paragraph</td>
+  </tr>
+  <tr>
+    <td> < br > </td>
+    <td>Element defines a break or space in the HTML</td>
+  </tr>
+  <tr> 
+    <td> < a > </td>
+    <td>Element defines a hyperlink</td>
+  </tr>
+  <tr> 
+    <td> < img > </td>
+    <td>Element embeds an image (does not require an end tag)</td>
+  </tr> 
+  <tr> 
+    <td> < div > </td>
+    <td>Element defines a division or section in the HTML</td>
+  </tr>
+</table>
+
+<h2>HTML Attributes</h2>
+    
+<p>HTML atrributes ptovide additional information about the element. Attribute are specifed in the start tag and usually come in name/value pairs ( < start tag name = "value"> < /ending tag >) </p>
+
+<h3>href Attribute</h3> 
+As you know, the < a > starting tag defines a hyperlink, the href attribute specifies the URL of the page the link goes to. The text between the start and ending tag will be the hyperlink the viewer can see. For example: 
+
+<h3 style="text-align:center"> < a href = "URL"> Link < / a > </h3> 
+ <h3 style="text-align:center"> <a href="https://jedediyah.com/about.html">Jedediyah's Web Page </a> </h3>
+    
+<h3>src, height, & width Attribute</h3> 
+  
+<p> The element is used to embed an image to the HTML, the src attribute specifies where the image displayed is from. When displaying images from the internet, you can use the URL (Image Adress) of the image. For example: </p>
+  
+<h3 style="text-align:center"> < img src = "URL" > </h3> 
+  
+<img class= "center" src="https://s3.amazonaws.com/paemst-v2-nominee-photos/2068219/2068219_profile.jpg" height=200>
+
+<p> The image tag can also contain the height and width attributes, which specify the height and width of the image. For example.</p>
+
+<h3 style="text-align:center"> < img src = "URL" width= "#" height= "#"> </h3> 
+  
+<h3>style Attribute</h3> 
+
+<p> The style attribute adds styles to an element, such as color, font, size, background color, etc.  For example: </p> 
+
+  <h3 style="text-align:center"> < p style = "CSS property: CSS value" > < /p > </h3>  
+
+<p> CSS, or Cascading Style Sheets, is the language used to style HTML. When using the style attribute the CSS property is what you'd like to style and the value is the specific change. For example if you'd like to change the background-color (CSS property) to blue (CSS value).</p>
+
+  <p>Below is a table of CSS properties: </p>  
+
+<table> 
+  <tr>
+    <th>CSS Property</th>
+    <th>What It Means</th>
+  </tr>
+  <tr>
+    <td>Background-color</td>
+    <td>Defines the background color of an element</td>
+  </tr>
+  <tr>
+    <td>Color</td>
+    <td>Defines the color of the text in the element</td>
+  </tr>
+  <tr>
+    <td>Font-family</td>
+    <td>Defines the font to be used in the element</td>
+  </tr>
+  <tr>
+    <td>Font-size</td>
+    <td>Defines the text size in an element</td>
+  </tr> 
+ <tr>
+    <td>text-align</td>
+    <td>Prints the working directory (the folder you are currently in)</td>
+  </tr> 
+</table>
+
+<h2>HEX Colors</h2>
+    
+<p> In HTML, a color can be specificed using a hexadecimal (6) value. HEX colors are written in the form: </p>
+    
+<h3 style= "text-align: center"> #RRGGBB </h3> 
+    
+<p>RR stands for red, GG stands for green, and BB for blue. These are hexademical values between 00 and FF. FF is the highest value and 00 being the lowest value.</p>
+    
+<p>For example, #FFO000 would be displayed as red, red being set to the highest value and green and blue being set to 00. You can use different values of red, blue, and green to make the color of preference.</p>
+    
+<p>Below is a list of colors and their HEX values: </p>
+
+<table> 
+
+ <tr>
+    <th>Color</th>
+    <th>HEX Value</th>
+  </tr>
+  <tr>
+    <td style= "color:#FF0000"> Red</td>
+    <td> #FF0000</td>
+  </tr>
+  <tr>
+    <td style= "color:#FFC0CB"> Pink</td>
+    <td> #FFC0CB</td>
+  </tr>
+  <tr>
+    <td style= "color:#FFA500">Orange</td>
+    <td>#FFA500</td>
+  </tr>
+  <tr>
+    <td style= "color:#FFA500">Yellow</td>
+    <td>#FFFF00</td>
+  </tr>
+  <tr>
+    <td style= "color:#00FF00">Green</td>
+    <td>#00FF00</td>
+  </tr>
+  <tr>
+    <td style= "color:#0000FF">Blue</td>
+    <td> #0000FF</td>
+  </tr>
+  <tr>
+    <td style= "color:#4B0082">Indigo</td>
+    <td> #4B0082</td>
+  </tr>
+  <tr>
+    <td style= "color:#8F0FF">Violet</td>
+    <td>#8F00FF</td>
+  </tr>
+  <tr>
+    <td>Black</td>
+    <td>#000000</td>
+  </tr> 
+  <tr>
+    <td style= "color:#FFFFFF" >White</td>
+    <td>#FFFFFF</td>
+  </tr>
+</table> 
+
+<h2>HTML Tables</h2>
+
+<h2>HTML Lists</h2>
+
+<h2>HTML Formatting</h2>
+
+
 <div style= "background-color: skyblue"> 
 <p style= "text-align: center; color: blue">Resources</p>
 <div style="text-align: center">
